@@ -13,6 +13,11 @@
 		09F145762552A669009E891F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F145752552A669009E891F /* Preview Assets.xcassets */; };
 		09F145812552A669009E891F /* CardsViewSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F145802552A669009E891F /* CardsViewSampleTests.swift */; };
 		09F1458C2552A669009E891F /* CardsViewSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F1458B2552A669009E891F /* CardsViewSampleUITests.swift */; };
+		09F1459E2552AD4E009E891F /* ViewsInAContainer.gif in Resources */ = {isa = PBXBuildFile; fileRef = 09F1459D2552AD4E009E891F /* ViewsInAContainer.gif */; };
+		09F145A32552B61B009E891F /* GIFPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F145A22552B61B009E891F /* GIFPlayer.swift */; };
+		09F145C02552ECB5009E891F /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F145BF2552ECB4009E891F /* PagingView.swift */; };
+		09F145C52552ED09009E891F /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F145C42552ED09009E891F /* CarouselView.swift */; };
+		09F145CA25542F6E009E891F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F145C925542F6D009E891F /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		09F145872552A669009E891F /* CardsViewSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsViewSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F1458B2552A669009E891F /* CardsViewSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewSampleUITests.swift; sourceTree = "<group>"; };
 		09F1458D2552A669009E891F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09F1459D2552AD4E009E891F /* ViewsInAContainer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ViewsInAContainer.gif; sourceTree = "<group>"; };
+		09F145A22552B61B009E891F /* GIFPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFPlayer.swift; sourceTree = "<group>"; };
+		09F145BF2552ECB4009E891F /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		09F145C42552ED09009E891F /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		09F145C925542F6D009E891F /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +105,16 @@
 		09F1456D2552A666009E891F /* CardsViewSample */ = {
 			isa = PBXGroup;
 			children = (
+				09F1459C2552AD20009E891F /* Resources */,
 				09F1456E2552A666009E891F /* CardsViewSampleApp.swift */,
 				09F145702552A666009E891F /* ContentView.swift */,
 				09F145722552A669009E891F /* Assets.xcassets */,
 				09F145772552A669009E891F /* Info.plist */,
 				09F145742552A669009E891F /* Preview Content */,
+				09F145A22552B61B009E891F /* GIFPlayer.swift */,
+				09F145BF2552ECB4009E891F /* PagingView.swift */,
+				09F145C42552ED09009E891F /* CarouselView.swift */,
+				09F145C925542F6D009E891F /* String+Extension.swift */,
 			);
 			path = CardsViewSample;
 			sourceTree = "<group>";
@@ -128,6 +143,14 @@
 				09F1458D2552A669009E891F /* Info.plist */,
 			);
 			path = CardsViewSampleUITests;
+			sourceTree = "<group>";
+		};
+		09F1459C2552AD20009E891F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09F1459D2552AD4E009E891F /* ViewsInAContainer.gif */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09F145762552A669009E891F /* Preview Assets.xcassets in Resources */,
+				09F1459E2552AD4E009E891F /* ViewsInAContainer.gif in Resources */,
 				09F145732552A669009E891F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F145C52552ED09009E891F /* CarouselView.swift in Sources */,
+				09F145CA25542F6E009E891F /* String+Extension.swift in Sources */,
+				09F145C02552ECB5009E891F /* PagingView.swift in Sources */,
 				09F145712552A666009E891F /* ContentView.swift in Sources */,
 				09F1456F2552A666009E891F /* CardsViewSampleApp.swift in Sources */,
+				09F145A32552B61B009E891F /* GIFPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +447,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CardsViewSample/Preview Content\"";
-				DEVELOPMENT_TEAM = Z97DRS4UT9;
+				DEVELOPMENT_TEAM = 8GM57Z56RX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CardsViewSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -427,7 +455,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ut.CardsViewSample;
+				PRODUCT_BUNDLE_IDENTIFIER = mcon.cardess.CardsViewSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,7 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CardsViewSample/Preview Content\"";
-				DEVELOPMENT_TEAM = Z97DRS4UT9;
+				DEVELOPMENT_TEAM = 8GM57Z56RX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CardsViewSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -449,7 +477,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ut.CardsViewSample;
+				PRODUCT_BUNDLE_IDENTIFIER = mcon.cardess.CardsViewSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,7 +490,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z97DRS4UT9;
+				DEVELOPMENT_TEAM = 8GM57Z56RX;
 				INFOPLIST_FILE = CardsViewSampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -484,7 +512,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z97DRS4UT9;
+				DEVELOPMENT_TEAM = 8GM57Z56RX;
 				INFOPLIST_FILE = CardsViewSampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -505,7 +533,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z97DRS4UT9;
+				DEVELOPMENT_TEAM = 8GM57Z56RX;
 				INFOPLIST_FILE = CardsViewSampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -525,7 +553,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z97DRS4UT9;
+				DEVELOPMENT_TEAM = 8GM57Z56RX;
 				INFOPLIST_FILE = CardsViewSampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
